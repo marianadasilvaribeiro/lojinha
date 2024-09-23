@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro e Compra Online</title>
+    <style>
+        body {
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            align-items: center;
+            margin: 20px;
+            padding: 20px;
+            border: 10px solid #ccc;
+            max-width: 800px;
+        }
+        input, select, button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="mb-auto">
+          <div>
+            <h3 class="float-md-start mb-0">loja de roupas</h3>
+            <nav class="nav nav-masthead justify-content-center float-md-end">
+              <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="index.html">inicio</a>
+              <a class="nav-link fw-bold py-1 px-0" href="login.html">login</a>
+            </nav>
+          </div>
+        </header>
+    
+    <link href="sign-in.css" rel="stylesheet">
+    <h2>Cadastro e Compra Online</h2>
+    <form action="/submit" method="POST">
+        <label for="name">Nome Completo:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="address">Endereço:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="city">Cidade:</label>
+        <input type="text" id="city" name="city" required>
+
+        <label for="state">Estado:</label>
+        <select id="state" name="state" required>
+            <option value="">Selecione</option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <!-- Adicione outros estados conforme necessário -->
+        </select>
+
+        <label for="zip">CEP:</label>
+        <input type="text" id="zip" name="zip" required>
+
+        <h3>Detalhes do Pagamento</h3>
+        <label for="cardName">Nome no Cartão:</label>
+        <input type="text" id="cardName" name="cardName" required>
+
+        <label for="cardNumber">Número do Cartão:</label>
+        <input type="text" id="cardNumber" name="cardNumber" required>
+
+        <label for="expiry">Data de Validade:</label>
+        <input type="month" id="expiry" name="expiry" required>
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" required>
+
+        <button type="submit">Finalizar Cadastro e Compra</button>
+    </form>
+
+</body>
+</html>
